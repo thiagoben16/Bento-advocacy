@@ -1,0 +1,91 @@
+*{
+    padding:0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color:  #0e0e10;
+    background-image: radial-gradient(circle at top right, #1c1c24 0%, #0e0e10 60%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffe082
+}
+.bento-container{
+    width: 400px;
+    height: 450px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 16px 8px;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(46px)
+    
+
+}
+.box-profile, .pitch-vendas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: column;    
+    
+    width: 100%;
+    padding: 10px 0;
+   
+}
+
+
+.redes-sociais li{
+    display: flex;
+    justify-content: center; /* Move o botão (link) para o centro do li */
+    align-items: center;
+    list-style: none;
+    width: 100%;
+}
+.redes-sociais ul{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 15px;
+    width: 100%;
+}
+.redes-sociais a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:70%;
+    text-decoration: none;
+    padding: 16px 24px ;
+    color: #1c1c24;
+    background-color: #ffe082;
+    border-radius: 50px;
+    translate: all 0.8s ease;
+}
+
+.redes-sociais a:hover{
+    background-color: #ffe066; /* Um amarelo levemente mais claro */
+    transform: scale(1.03);    /* Dá um leve zoom no botão */
+    cursor: pointer;
+}
+
+h1,h2{
+    font-family: "Cinzel", serif;
+    letter-spacing: 2px
+}
+
+@media screen and (max-width: 500px) {
+    .bento-container{
+        width: 90%;
+        font-size: 12px;
+        height: 350px;
+    }
+}
+
