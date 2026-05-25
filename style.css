@@ -84,7 +84,7 @@ h1,h2{
 @media screen and (max-width: 500px) {
     .bento-container{
         width: 90%;
-        font-size: 12px;
+        font-size: 14px;
         height: 350px;
     }
 }
